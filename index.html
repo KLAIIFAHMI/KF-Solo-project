@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="style.css">
   <title>IDEA SHARING PLATFORM RBK</title>
   <link rel="icon" href="img/icon website.png">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
 </head>
+
+
 
 <body>
   <!-- Header -->
@@ -26,9 +30,9 @@
           <ul>
             <li><a href="#home" data-after="Home">Home</a></li>
             <li><a href="#PLATFORM" data-after="PLATFORM">YOUR <span style="color: rgb(220, 20, 183);;">IDEA !
-              <span></a></li>
+                  <span></a></li>
             <li><a href="https://www.rbktunisia.com/" target="_blank">About <span style="color: rgb(220, 20, 183);;">RBK
-              <span></a></li>
+                  <span></a></li>
 
           </ul>
         </div>
@@ -45,6 +49,7 @@
         <h1>Hello, <span></span></h1>
         <h1>PLEASE FEEL FREE <span></span></h1>
         <h1>TO SHARE YOUR IDEA ! <span></span></h1>
+        <h1>TO GIVE YOUR FEEDBACK ! <span></span></h1>
 
       </div>
     </div>
@@ -55,12 +60,36 @@
   <section id="PLATFORM">
     <div class="PLATFORM container">
 
+      <form id="msform">
+
+
+        <h2 class="fs-title">SUBMIT YOUR <span style="color:var(--rbk) ;">IDEA !</span> </h2>
+        <h3 class="fs-subtitle">PLease fill the form below</h3>
+
+        <input id="name" type="text" placeholder="Name" />
+        <input id="emailId" type="text" name="email" placeholder="Email" />
+
+
+        <label for="subjectOption">Choose an option</label>
+        <select name="subjectOption" id="subjectOption">
+          <option value="A Feedback">A Feedback</option>
+          <option value="A new Idea">A new Idea</option>
+        </select>
+
+        <input style="height: 200px  ;"  id="IdeaSubject" type="text"  placeholder="Your feedack !" />
+
+        <input name="next" class="next action-button" value="Share" onclick="sendEmail()" />
+
+
+      </form>
+
+
     </div>
   </section>
   <!-- End PLATFORM Section -->
 
 
-  <!-- Footer -->2
+  <!-- Footer -->
   <section id="footer">
     <div class="footer container">
       <div class="brand">
@@ -73,9 +102,8 @@
   <!-- End Footer -->
 
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./main.js"></script>
-
-
 </body>
 
 </html>
