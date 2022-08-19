@@ -259,7 +259,7 @@ label {
 /* HOME Section */
 #home {
 	background-image: url(./img/idea\ background.gif);
-	background-size:contain;
+	background-size: contain;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
@@ -353,7 +353,7 @@ label {
 /* PLATFORM Section */
 #PLATFORM {
 	background-image: url(./img/background5.gif);
-	background-size:cover;
+	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
@@ -540,7 +540,8 @@ label {
 
 
 /*inputs*/
-#msform input,#msform select,
+#msform input,
+#msform select,
 #msform textarea {
 	padding: 15px;
 	border: 1px solid #ccc;
@@ -551,6 +552,7 @@ label {
 	font-family: montserrat;
 	color: #2C3E50;
 	font-size: 13px;
+
 }
 
 /*buttons*/

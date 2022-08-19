@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>IDEA SHARING PLATFORM RBK</title>
   <link rel="icon" href="img/icon website.png">
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
@@ -64,7 +64,7 @@
 
 
         <h2 class="fs-title">SUBMIT YOUR <span style="color:var(--rbk) ;">IDEA !</span> </h2>
-        <h3 class="fs-subtitle">PLease fill the form below</h3>
+        <h3 class="fs-subtitle" style="cursor: pointer ;">PLease fill the form below</h3>
 
         <input id="name" type="text" placeholder="Name" />
         <input id="emailId" type="text" name="email" placeholder="Email" />
@@ -76,10 +76,11 @@
           <option value="A new Idea">A new Idea</option>
         </select>
 
-        <input style="height: 200px  ;"  id="IdeaSubject" type="text"  placeholder="Your feedack !" />
+        <input style="height: 200px  ;" id="IdeaSubject" type="text" placeholder="Your feedack !" />
 
         <input name="next" class="next action-button" value="Share" onclick="sendEmail()" />
-
+        <h2 id="hiddenThanks" class="fs-title" style="color: white ;">Thank you !</span> </h2>
+        <h2 id="alertData" class="fs-title" style="color: white ;">Alert</span> </h2>
 
       </form>
 
